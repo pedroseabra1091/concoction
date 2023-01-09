@@ -1,0 +1,26 @@
+version: "3.3"
+services:
+  application:
+      image: pedroseabra1091/concoction:latest
+      container_name: concoction
+      environment:
+        MIX_ENV: dev
+      env_file: .env.local
+      ports:
+        - 4000:4000
+      depends_on:
+        - postgresql
+  postgresql:
+    image: postgres:14-alpine
+    container_name: postgres
+    env_file: .env.local
+    environment:
+      POSTGRES_DB: concoction_dev
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - concoction_psql:/var/lib/postgresql/data
+volumes:
+  concoction_psql:
