@@ -21,5 +21,3 @@ echo -e '\n Javascript dependencies downloaded ✓\n'
 mix ecto.create
 mix ecto.migrate
 echo -e '\n Database created and migrated ✓\n'
-
-echo "Setup Complete"

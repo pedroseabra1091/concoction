@@ -13,8 +13,4 @@
 
 ## Brew your own concoction
 1. Clone this project – `git clone https://github.com/pedroseabra1091/concoction.git`
-2. Delete the internal Git directory – `rm -rf .git`
-2. Install all the hard requirements – `bin/install`
-3. Run the setup script – `bin/concoction <your_project_name>`
-4. Create a new repo – `git init`
-5. Commit those changes – `git commit -m "Initial commit"`
+2. Run `bin/new_concoction.sh <concoction_name>`

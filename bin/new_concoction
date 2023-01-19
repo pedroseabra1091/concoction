@@ -19,6 +19,9 @@ echo -e '\nProject file directories renamed ✓\n'
 LC_ALL=C find . -not -path './assets/*' -and -not -path './.git/*' -exec sed -i '' -e "s/concoction/${target_app_name}/g" -e "s/Concoction/${target_app_name_c}/g" {} \;
 echo -e '\nCode ocurrences renamed ✓\n'
 
-./setup
+bin/install
+echo -e '\nInstall complete! ✓\n'
+
+bin/setup
 echo -e '\nSetup complete! ✓\n'
 
