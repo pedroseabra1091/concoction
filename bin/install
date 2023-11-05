@@ -9,20 +9,20 @@ echo -e '\nElixir plugin installed ✓\n'
 asdf plugin-add nodejs
 echo -e '\nNodeJS plugin installed ✓\n'
 
-asdf install erlang 24.1.2
-echo -e '\nErlang 24.1.2 installed ✓\n'
+erlang_version=$(cat .tool-versions | grep erlang | cut -d ' ' -f2)
+elixir_version=$(cat .tool-versions | grep elixir | cut -d ' ' -f2)
+nodejs_version=$(cat .tool-versions | grep nodejs | cut -d ' ' -f2)
 
-asdf install elixir 1.12.3
-echo -e '\nElixir 1.12.3 installed ✓\n'
+asdf install
+echo -e "\nErlang ${erlang_version} installed ✓\n"
+echo -e "\nElixir ${elixir_version} installed ✓\n"
+echo -e "\nNodeJS ${nodejs_version} installed ✓\n"
 
-asdf install nodejs 16.0.0
-echo -e '\nNodeJS 16.0.0 installed ✓\n'
+asdf local erlang ${erlang_version}
+echo -e "\nErlang ${erlang_version} locally set ✓\n"
 
-asdf local erlang 24.1.2
-echo -e '\nErlang 24.1.2 locally set ✓\n'
+asdf local elixir ${elixir_version}
+echo -e "\nElixir ${elixir_version} locally set ✓\n"
 
-asdf local elixir 1.12.3
-echo -e '\nElixir 1.12.3 locally set ✓\n'
-
-asdf local nodejs 16.0.0
-echo -e '\nNodeJS 16.0.0 installed ✓\n'
+asdf local nodejs ${nodejs_version}
+echo -e "\nNodeJS ${nodejs_version} installed ✓\n"
