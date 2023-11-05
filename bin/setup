@@ -14,7 +14,7 @@ source .env.local && mix deps.get
 echo -e '\n Elixir dependencies downloaded ✓\n'
 
 # Download frontend dependencies
-cd assets/ && yarn
+cd assets/ && yarn && cd -
 echo -e '\n Javascript dependencies downloaded ✓\n'
 
 # Create and migrate database
