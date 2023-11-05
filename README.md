@@ -13,14 +13,12 @@ Welcome to Concoction - Brewing Elixir Magic 🧙‍♂️
   - 🛡️ Security Scrying: Ward off vulnerabilities with Mix Audit and Sobelow.
   - 💉 Healthcheck Potion: Keep your concoction robust with plug_checkup.
   - 🔧 CI integration with CircleCI
-  - 🪖 Security scanning with [Mix Audit](https://hex.pm/packages/mix_audit) and [Sobelow](https://hexdocs.pm/sobelow/readme.html)
-  - 🩸 Healthcheck setup with [plug_checkup](https://hexdocs.pm/plug_checkup/api-reference.html)
-  - 🧰 Server-side rendered React components using [Remount](https://github.com/rstacruz/remount)
-  - 🧰 Server-side rendered Surface components using [Surface](https://github.com/surface-ui/surface)
+  - 🪖 Security scanning with [Mix Audit](https://hex.pm/packages/mix_audit) and [Sobelow](https://hexdocs.pm/sobelow/readme.html).
+  - 🩸 Healthcheck setup with [plug_checkup](https://hexdocs.pm/plug_checkup/api-reference.html).
+  - 🧰 Server-side rendered React components using [Remount](https://github.com/rstacruz/remount).
+  - 🧰 Server-side rendered Surface components using [Surface](https://github.com/surface-ui/surface).
 
 ## Brewing instructions
-1. **Acquire the Recipe:** git clone https://github.com/pedroseabra1091/concoction.git
-2. **Begin Your Brew:** bin/new_concoction.sh <concoction_name>
+1. **Acquire the Recipe:** `git clone https://github.com/pedroseabra1091/concoction.git``.
+2. **Begin Your Brew:** `bin/new_concoction.sh <concoction_name>``.
 2. **Concoct and Tinker:** Stir your cauldron and bring your potion to life! 🍵
-
-Let the magic flow through your fingertips as you craft your unique elixirs. May your code be ever enchanting! ✨📜✨
