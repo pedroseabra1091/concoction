@@ -40,3 +40,6 @@ data/*
 # Environment variable files
 .env.local
 .env.prod
+
+# Ignore OSX Desktop Services Store files
+.DS_STORE
